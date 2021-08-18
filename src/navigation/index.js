@@ -30,8 +30,8 @@ export default AppStack = () => {
 
   const onOpenIndex = () => {
     // console.disableYellowBox = true;
-    // YellowBox.ignoreWarnings(['Non-serializable values were found in the navigation state',
-    //   'Warning: Async Storage has been extracted from react-native core']);
+    YellowBox.ignoreWarnings(['Non-serializable values were found in the navigation state',
+      'Warning: Async Storage has been extracted from react-native core']);
     LogBox.ignoreLogs(['Setting a timer for a long period of time']);
   }
 
@@ -39,7 +39,7 @@ export default AppStack = () => {
   if (username) {
     return (
       <Background>
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', Background:'#01ab9d' }}>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', Background: '#01ab9d' }}>
           <ActivityIndicator size="large" />
         </View>
       </ Background>
