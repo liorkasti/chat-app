@@ -188,7 +188,8 @@ const ChatRoom = ({ navigation }) => {
       onSend={handleSend}
       showAvatarForEveryMessage={true}
       user={{
-        user,
+        _id: user._id,
+        name: user.usernamename,
         avatar: avatarURL ? avatarURL : `https://placeimg.com/${rand1}/${rand2}/any`,
       }}
     />
